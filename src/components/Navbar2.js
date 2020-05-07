@@ -12,6 +12,10 @@ function Navbar2() {
   const mystyle = {
     height: "50px",
   };
+  const mystyle2 = {
+    color: "#001789",
+  };
+
   return (
     <div>
       <Row>
@@ -47,15 +51,15 @@ function Navbar2() {
           className="m-1"
         />
 
-        <ToggleButton className="mt-3 ml-2 h-25 text-primary" value="check">
+        <ToggleButton style={mystyle2} className="mt-3 ml-2 h-25" value="check">
           <ListIcon />
           List View
         </ToggleButton>
-        <ToggleButton value="check" className="mt-3 h-25 text-primary">
+        <ToggleButton style={mystyle2} value="check" className="mt-3 h-25">
           <ImageIcon />
           Image Display
         </ToggleButton>
-        <ToggleButton value="check" className="mt-3 h-25 text-primary">
+        <ToggleButton style={mystyle2} value="check" className="mt-3 h-25">
           <AppsIcon />
           Detail View
         </ToggleButton>
