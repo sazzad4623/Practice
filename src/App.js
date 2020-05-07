@@ -9,11 +9,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Navbar1 />
+        {/* <Navbar1 /> */}
         {/* <YoutubeForm /> */}
         {/* <ResponsiveDrawer />
         <h1>uioooooooooooohscklklklklklklklkljhnklkh</h1> */}
-        {/* <Navbar2 /> */}
+        <Navbar2 />
       </div>
     );
   }

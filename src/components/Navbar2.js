@@ -9,38 +9,53 @@ import ListIcon from "@material-ui/icons/List";
 import ImageIcon from "@material-ui/icons/Image";
 
 function Navbar2() {
+  const mystyle = {
+    height: "50px",
+  };
   return (
     <div>
       <Row>
-        <h2 className="danger">1372</h2>
-        {/* <NavbarText>products</NavbarText> */}
+        <div className="pl-3 pt-1">
+          <h2>1372</h2>{" "}
+        </div>
+        <div className="pl-1 pt-3">
+          <p>Products</p>
+        </div>
+        <div>
+          <p className="pl-1 pt-3">Display 1 to 40</p>
+        </div>
+        <diV className="pb-1">
+          <Pagination
+            size="sm"
+            aria-label="Page navigation example"
+            className="m-2"
+          >
+            <PaginationItem className="m-1">
+              <PaginationLink previous href="#" />
+            </PaginationItem>
 
-        <p className="m-1">Display 1 to 40</p>
-        <Pagination
-          size="sm"
-          aria-label="Page navigation example"
-          className="m-1 pt-3"
-        >
-          <PaginationItem className="m-1">
-            <PaginationLink previous href="#" />
-          </PaginationItem>
+            <PaginationItem className="m-1">
+              <PaginationLink next href="#" />
+            </PaginationItem>
+          </Pagination>
+        </diV>
 
-          <PaginationItem className="m-1">
-            <PaginationLink next href="#" />
-          </PaginationItem>
-        </Pagination>
+        <Divider
+          style={mystyle}
+          orientation="vertical"
+          flexItem
+          className="m-1"
+        />
 
-        <Divider orientation="vertical" flexItem className="m-1" />
-
-        <ToggleButton className="ml-2 h-25 text-primary" value="check">
+        <ToggleButton className="mt-3 ml-2 h-25 text-primary" value="check">
           <ListIcon />
           List View
         </ToggleButton>
-        <ToggleButton value="check" className="h-25 text-primary">
+        <ToggleButton value="check" className="mt-3 h-25 text-primary">
           <ImageIcon />
           Image Display
         </ToggleButton>
-        <ToggleButton value="check" className="h-25 text-primary">
+        <ToggleButton value="check" className="mt-3 h-25 text-primary">
           <AppsIcon />
           Detail View
         </ToggleButton>
