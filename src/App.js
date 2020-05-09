@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar1 from "./components/navbar";
 import Navbar2 from "./components/Navbar2";
 import Header from "./components/header";
+import Header2 from "./components/header2";
 
 export default class App extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <h1>uioooooooooooohscklklklklklklklkljhnklkh</h1> */}
         <Navbar2 />
         <Header />
+        <Header2 />
       </div>
     );
   }
