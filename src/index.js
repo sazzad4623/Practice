@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "antd/dist/antd.css";
 // import CardProducts from "./components/product.component";
 
 ReactDOM.render(

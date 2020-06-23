@@ -9,6 +9,7 @@ import Header2 from "./components/header2";
 import CardProducts from "./components/product.component";
 import CenteredGrid from "./components/grid.component";
 import ProductsSortingHeader from "./components/header3.component";
+import Formex from "./components/form.component";
 
 export default class App extends Component {
   render() {
@@ -22,8 +23,9 @@ export default class App extends Component {
         <Header />
         <Header2 /> */}
         {/* <CardProducts /> */}
-        <ProductsSortingHeader />
-        <CenteredGrid></CenteredGrid>
+        {/* <ProductsSortingHeader />
+        <CenteredGrid></CenteredGrid> */}
+        <Formex />
       </div>
     );
   }
