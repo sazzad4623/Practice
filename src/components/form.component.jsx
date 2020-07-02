@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card } from "antd";
+import moment from "moment";
 import {
   Form,
   Select,
@@ -15,6 +16,7 @@ import {
   Col,
   Input,
   Space,
+  DatePicker,
 } from "antd";
 import {
   UploadOutlined,
@@ -55,6 +57,10 @@ const normFile = (e) => {
 
   return e && e.fileList;
 };
+
+var mydate = new Date("2014-04-03");
+var momentObj = moment(mydate, "YYYY");
+var momentString = momentObj.format("YYYY");
 
 const validateMessages = {
   required: "${label} is required!",
@@ -125,11 +131,11 @@ export default class Formex extends Component {
 
                 <Form.Item
                   name="name"
-                  label="Name"
+                  label="date lulu"
                   {...layout}
-                  rules={[{ required: true, whitespace: true }]}
+                  rules={[{ required: true }]}
                 >
-                  <Input />
+                  <DatePicker picker="year" defaultValue={momentObj} />
                 </Form.Item>
 
                 <Form.Item name={["user", "introduction"]} label="Introduction">

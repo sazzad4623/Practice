@@ -25,8 +25,8 @@ export default class App extends Component {
         {/* <CardProducts /> */}
         {/* <ProductsSortingHeader />
         <CenteredGrid></CenteredGrid> */}
-        {/* <Formex /> */}
-        <Ticker />
+        <Formex />
+        {/* <Ticker /> */}
       </div>
     );
   }
